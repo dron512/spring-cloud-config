@@ -1,16 +1,34 @@
 spring:
+  application:
+    name: user-service
   datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password: 
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
+  sql:
+    init:
+      platform: mysql
+
+mybatis:
+  # resources/mapper/ ? ?? ?? xml ??
+  mapper-locations: mapper/*.xml
+
+server:
+  port: 8083
+
+eureka:
+  #  instance:
+  #    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka
+    fetch-registry: true
+    register-with-eureka: true
 
 token:
-  expiration_time: 5640000010
-  # secret: YOUR_SECRETKEY_20240202_FOR_SPRING_CLOUD_LOGIN
-  # secret: 20240206_YOUR_SECRETKEY_20240202_FOR_SPRING_CLOUD_LOGIN_#1
-  # secret: APPLE_YOUR_SECRETKEY_20240202_FOR_SPRING_CLOUD_LOGIN_#1
-  # secret: BANANA_YOUR_SECRETKEY_20240202_FOR_SPRING_CLOUD_LOGIN_#1
-  secret: '{cipher}12345678'
+  expiration_time: 86400000
+  secret: mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004
+
 gateway:
   ip: 127.0.0.1
