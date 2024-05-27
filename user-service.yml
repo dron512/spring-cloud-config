@@ -10,6 +10,9 @@ spring:
     init:
       platform: mysql
 
+mh:
+  value: myvalue
+
 mybatis:
   # resources/mapper/ ? ?? ?? xml ??
   mapper-locations: mapper/*.xml
