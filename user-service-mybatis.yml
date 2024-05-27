@@ -11,7 +11,7 @@ spring:
       platform: mysql
 
 mh:
-  value: actuator
+  value: actuatoraa
 
 mybatis:
   # resources/mapper/ ? ?? ?? xml ??
