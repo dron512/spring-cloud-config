@@ -11,7 +11,7 @@ spring:
       platform: mysql
 
 mh:
-  value: aualsdkjfnlkj
+  value: changeValue
 
 mybatis:
   # resources/mapper/ ? ?? ?? xml ??
