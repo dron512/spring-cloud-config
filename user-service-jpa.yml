@@ -26,13 +26,16 @@ server:
   port: 8089
 
 eureka:
-   instance:
-     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  #    prefer-ip-address: true
+  #    ip-address: ${server.address}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
     fetch-registry: true
     register-with-eureka: true
+
 
 token:
   expiration_time: 86400000
@@ -41,9 +44,3 @@ token:
 gateway:
   ip: 127.0.0.1
 
-token:
-  expiration_time: 864000000 
-  secret: user_token_native_user_service_dev
-
-gateway:
-  ip: 192.168.0.8

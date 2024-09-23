@@ -6,9 +6,9 @@ spring:
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
-  sql:
-    init:
-      platform: mysql
+sql:
+  init:
+    platform: mysql
 
 mh:
   value: changeValue
@@ -21,13 +21,16 @@ server:
   port: 8089
 
 eureka:
-   instance:
-     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  #    prefer-ip-address: true
+  #    ip-address: ${server.address}
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://127.0.0.1:8761/eureka
     fetch-registry: true
     register-with-eureka: true
+
 
 token:
   expiration_time: 86400000
