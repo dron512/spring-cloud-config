@@ -6,9 +6,9 @@ spring:
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
-  sql:
-    init:
-      platform: mysql
+sql:
+  init:
+    platform: mysql
 
 mh:
   value: actuator
