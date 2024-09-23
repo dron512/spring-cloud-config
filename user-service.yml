@@ -3,7 +3,7 @@ spring:
     name: user-service
   datasource:
     username: root
-    password: "{cipher}06e5506b09f5735a3c8dc3cb7b6f315f4c5d3fd3a83c2d3fd107c457725d1277"
+    password: "password"
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
   sql:
