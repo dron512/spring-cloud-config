@@ -6,9 +6,7 @@ spring:
     password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
-  sql:
-    init:
-      platform: mysql
+
   jpa:
     hibernate:
       ddl-auto: none
@@ -16,6 +14,10 @@ spring:
       hibernate.format_sql: true
     show-sql: true
     open-in-view: false
+
+sql:
+  init:
+    platform: mysql
 
 mh:
   value: changeValue
