@@ -16,14 +16,14 @@ mh:
 server:
   port: 8083
 
-eureka:
+# eureka:
   #  instance:
   #    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-  client:
-    service-url:
-      defaultZone: http://eurekaserver:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
+  # client:
+  #   service-url:
+  #     defaultZone: http://eurekaserver:8761/eureka
+  #   fetch-registry: true
+  #   register-with-eureka: true
 
 token:
   expiration_time: 86400000
