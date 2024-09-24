@@ -20,7 +20,7 @@ sql:
     platform: mysql
 
 mh:
-  value: changeValue
+  value: "{cipher}80c0523175dab0be8f255543577738acdd00b22bd93e473e74d329a9b18f7679"
 
 server:
   port: 8089
