@@ -3,7 +3,7 @@ spring:
     name: user-service
   datasource:
     username: root
-    password: '{cipher}AQABRU/ucXp7EawoT9rkpeNcmwSoPCMqPBE04orU1jPM+irJsddprwG7pUKeJYwNfgaYT/wbOjyJwqCkMFpsL8M5cLntcTUQLVSkSwCk0Ivf9s+gN8wGLUc1yfLYeYRDPdTc6mb/lT/QGmedF8boNdWTorqE7b73i9bMjHKWdNMCf8ajfkxqYfFC8m0YlrqBnDKf/K/vz2kphtIN+dL5V25PJZF8ectqzGdRBhOfdwGufCWMmPGnXQGdhQKdV5a0Gfm5CK+JuQ/d3U43jQMtUst8T7a0vIv0Rj1KpGdgms1/1S8QX56OeMAGaQg18LXRdtl/FSl1MUZUOWkgh4nCqyGJuRt7Y5oDviujGL/3/T3muYzxTu2io01FwHN9Q1MmH7s='
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
 
