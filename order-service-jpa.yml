@@ -28,21 +28,24 @@ server:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-  #    prefer-ip-address: true
-  #    ip-address: ${server.address}
   client:
+    register-with-eureka: true
+    fetch-registry: true
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka
-    fetch-registry: true
-    register-with-eureka: true
 
+# logging:
+#   level:
+#     com.example.orderservice: DEBUG
+#   pattern:
+#     correlation: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
 
 token:
   expiration_time: 86400000
   secret: mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004mh1004
 
-gateway:
-  ip: 127.0.0.1
+# gateway:
+#   ip: 127.0.0.1
 
 
 
