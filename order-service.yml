@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: order-service
   profiles:
     active: jpa
   datasource:
@@ -53,8 +51,6 @@ token:
 
 ---
 spring:
-  application:
-    name: order-service
   profiles:
     active: docker
   datasource:
