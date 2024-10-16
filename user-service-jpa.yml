@@ -1,8 +1,6 @@
 spring:
   application:
     name: user-service
-  profiles:
-    active: jpa
   datasource:
     username: root
     password: 1234
