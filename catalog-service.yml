@@ -1,6 +1,8 @@
 spring:
   application:
     name: catalog-service
+  profiles:
+    active: jpa
   datasource:
     # username: root
     # password: 1234
