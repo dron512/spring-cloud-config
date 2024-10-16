@@ -4,10 +4,10 @@ spring:
   profiles:
     active: jpa
   datasource:
-    # username: root
-    # password: 1234
+    username: root
+    password: 1234
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/pmh?characterEncoding=UTF-8&serverTimezone=UTC
   jpa:
     hibernate:
       ddl-auto: create
@@ -33,9 +33,9 @@ eureka:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
   #    prefer-ip-address: true
   #    ip-address: ${server.address}
-  # client:
-  #   service-url:
-  #     defaultZone: http://127.0.0.1:8761/eureka
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka
     fetch-registry: true
     register-with-eureka: true
 
