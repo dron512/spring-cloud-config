@@ -44,7 +44,7 @@ logging:
   level:
     com.mh.userservice.feignclient: DEBUG
   pattern:
-    correlation: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
+    level: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
 
 management:
   tracing:
