@@ -42,7 +42,7 @@ eureka:
 
 logging:
   level:
-    com.example.userservice.client: DEBUG
+    com.mh.userservice.feignclient: DEBUG
   pattern:
     correlation: '%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]'
 
